@@ -24,7 +24,7 @@ Extracts PDF metadata in a specified file.／指定されたPDFファイルか�
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g get-pdf-metadata-sample-cli
+$ npm install -g https://github.com/YIsoda/GetPdfMetadataSample
 $ getpdfinfo COMMAND
 running command...
 $ getpdfinfo (--version)
