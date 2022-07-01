@@ -51,7 +51,8 @@
       "hello": {
         "description": "Say hello to the world and others"
       }
-    }
+    },
+    "default": "hello"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
