@@ -1,6 +1,6 @@
 {
   "name": "get-pdf-metadata-sample-cli",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Extracts PDF metadata in a specified file",
   "author": "Y. Isoda @YIsoda",
   "bin": {
