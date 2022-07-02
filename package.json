@@ -1,6 +1,6 @@
 {
   "name": "get-pdf-metadata-sample-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Extracts PDF metadata in a specified file",
   "author": "Y. Isoda @YIsoda",
   "bin": {
@@ -53,7 +53,7 @@
         "description": "Say hello to the world and others"
       }
     },
-    "default": "hello"
+    "default": "getpdfinfo"
   },
   "scripts": {
     "build": "shx rm -rf dist && tsc -b",
