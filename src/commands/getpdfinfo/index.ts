@@ -11,6 +11,13 @@ export default class GetPdfInfoCommand extends Command {
 
   static args = [{ name: 'file', description: 'PDF file to extract', required: true }]
 
+  static flags = {
+    title: Flags.boolean({
+      char: "t",
+      description: "show title only",
+    })
+  }
+
   async run(): Promise<void> {
     const { args, flags } = await this.parse(GetPdfInfoCommand);
 
@@ -20,6 +27,10 @@ export default class GetPdfInfoCommand extends Command {
       function (doc: PDFDocumentProxy) {
         const lastPromise = doc.getMetadata().then(
           function (data) {
+            if (flags.title) {
+              console.log((data.info as { Title: string }).Title);
+              return;
+            }
             console.log(data.info);
             const info = data.info;
             if ("subject" in info) {
