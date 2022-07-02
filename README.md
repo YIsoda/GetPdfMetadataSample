@@ -6,11 +6,11 @@ Extracts PDF metadata in a specified file.／指定されたPDFファイルか�
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 <!-- toc -->
-* [Usage](#usage)
-* [Commands](#commands)
+<!-- * [Usage](#usage) -->
+<!-- * [Commands](#commands) -->
 <!-- tocstop -->
-* [Usage](#usage)
-* [Commands](#commands)
+<!-- * [Usage](#usage) -->
+<!-- * [Commands](#commands) -->
 <!-- tocstop -->
 # Usage
 <!-- usage -->
@@ -19,9 +19,15 @@ $ npm install -g https://github.com/YIsoda/GetPdfMetadataSample # it may take a 
 $ getpdfinfo <path_to_pdf_file>
 ...
 ```
+
+To remove package, run `npm uninstall -g get-pdf-metadata-sample-cli`
 <!-- usagestop -->
 <!-- usagestop -->
 
+# Links
+
+- [oclif: The Open CLI Framework](https://oclif.io/) ([oclif GitHub repo](https://github.com/oclif/oclif)): Used for command line interface 
+- [PDF.js](https://mozilla.github.io/pdf.js/) ([PDF.js sGitHub repo](https://github.com/mozilla/pdf.js)): Used for extracting PDF metadata
 
 <!-- # Commands -->
 <!-- commands -->
