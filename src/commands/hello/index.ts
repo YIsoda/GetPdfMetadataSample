@@ -1,23 +1,38 @@
-import {Command, Flags} from '@oclif/core'
+import { Command, Flags } from '@oclif/core'
+import { getDocument, PDFDocumentProxy } from 'pdfjs-dist';
 
-export default class Hello extends Command {
-  static description = 'Say hello'
+export default class GetPdfInfoCommand extends Command {
+  static description = 'Show specified PDF metadata';
 
   static examples = [
-    `$ oex hello friend --from oclif
-hello friend from oclif! (./src/commands/hello/index.ts)
+    `$ getpdfinfo <path_to_pdf_file>
 `,
-  ]
+  ];
 
-  static flags = {
-    from: Flags.string({char: 'f', description: 'Whom is saying hello', required: true}),
-  }
-
-  static args = [{name: 'person', description: 'Person to say hello to', required: true}]
+  static args = [{ name: 'file', description: 'PDF file to extract', required: true }]
 
   async run(): Promise<void> {
-    const {args, flags} = await this.parse(Hello)
+    const { args, flags } = await this.parse(GetPdfInfoCommand);
 
-    this.log(`hello ${args.person} from ${flags.from}! (./src/commands/hello/index.ts)`)
+    const path = args.file;
+    const loadingTask = getDocument(path);
+    loadingTask.promise.then(
+      function (doc: PDFDocumentProxy) {
+        const lastPromise = doc.getMetadata().then(
+          function (data) {
+            console.log(data.info);
+            const info = data.info;
+            if ("subject" in info) {
+              console.log(info.toString);
+            }
+            if (data.metadata) {
+              console.log("## Metadata");
+              console.log(data.metadata.getAll());
+              console.log();
+            }
+          }
+        )
+      }
+    );
   }
 }
