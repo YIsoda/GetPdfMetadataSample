@@ -3,13 +3,6 @@ GetPdfMetadataSampleCli
 
 Extracts PDF metadata in a specified file.／指定されたPDFファイルからメタデータを抽出するサンプルです。
 
-
-
-
-↓Auto-generated Readme
-
----
-
 [![oclif](https://img.shields.io/badge/cli-oclif-brightgreen.svg)](https://oclif.io)
 
 <!-- toc -->
@@ -22,32 +15,17 @@ Extracts PDF metadata in a specified file.／指定されたPDFファイルか�
 # Usage
 <!-- usage -->
 ```sh-session
-$ npm install -g https://github.com/YIsoda/GetPdfMetadataSample
-$ getpdfinfo COMMAND
-running command...
-$ getpdfinfo (--version)
-get-pdf-metadata-sample-cli/0.0.0 win32-x64 node-v18.3.0
-$ getpdfinfo --help [COMMAND]
-USAGE
-  $ getpdfinfo COMMAND
+$ npm install -g https://github.com/YIsoda/GetPdfMetadataSample # it may take a few minutes to install (dev)dependencies
+$ getpdfinfo <path_to_pdf_file>
 ...
 ```
 <!-- usagestop -->
-```sh-session
-$ npm install -g oclif-hello-world
-$ oex COMMAND
-running command...
-$ oex (--version)
-oclif-hello-world/0.0.0 darwin-x64 node-v16.13.1
-$ oex --help [COMMAND]
-USAGE
-  $ oex COMMAND
-...
-```
 <!-- usagestop -->
-# Commands
+
+
+<!-- # Commands -->
 <!-- commands -->
-* [`getpdfinfo hello PERSON`](#getpdfinfo-hello-person)
+<!-- * [`getpdfinfo hello PERSON`](#getpdfinfo-hello-person)
 * [`getpdfinfo hello world`](#getpdfinfo-hello-world)
 * [`getpdfinfo help [COMMAND]`](#getpdfinfo-help-command)
 * [`getpdfinfo plugins`](#getpdfinfo-plugins)
@@ -348,9 +326,9 @@ FLAGS
 
 DESCRIPTION
   Update installed plugins.
-```
+``` -->
 <!-- commandsstop -->
-* [`oex hello PERSON`](#oex-hello-person)
+<!-- * [`oex hello PERSON`](#oex-hello-person)
 * [`oex hello world`](#oex-hello-world)
 * [`oex help [COMMAND]`](#oex-help-command)
 * [`oex plugins`](#oex-plugins)
@@ -564,5 +542,5 @@ FLAGS
 
 DESCRIPTION
   Update installed plugins.
-```
+``` -->
 <!-- commandsstop -->
